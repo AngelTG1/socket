@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://n0k760zz-5174.usw3.devtunnels.ms/mapa"
+        origin: "*"
     }
 });
 
