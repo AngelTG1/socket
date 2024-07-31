@@ -15,6 +15,10 @@ const io = new Server(server, {
 
 let locations = {};
 
+app.get('/welcome', (req, res) => {
+    res.json({ message: 'Bienvenido al servidor de ubicación en tiempo real' });
+});
+
 io.on('connection', (socket) => {
     console.log('Cliente conectado');
 
